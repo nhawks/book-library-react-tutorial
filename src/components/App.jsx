@@ -19,16 +19,18 @@ class App extends Component{
         return(
             <div className="container-fluid">
                 <TitleBar />
-                <div className="col-md-4">
-                    {/* Button for previous book */}
-                </div>
-                <div className="col-md-4">
-                    {/* Displays Book */}
-                    <h1>{this.books[this.state.bookNumber].title}</h1>
-                    <h4>{this.books[this.state.bookNumber].author}</h4>
-                </div>
-                <div className="col-md-4">
-                    {/* Button for next book */}
+                <div className="row">
+                    <div className="col-md-4">
+                        {/* Button for previous book */}
+                    </div>
+                    <div className="col-md-4">
+                        {/* Displays Book */}
+                        <h1>{this.books[this.state.bookNumber].title}</h1>
+                        <h4>{this.books[this.state.bookNumber].author}</h4>
+                    </div>
+                    <div className="col-md-4">
+                        {/* Button for next book */}
+                    </div>
                 </div>
             </div>
         )
